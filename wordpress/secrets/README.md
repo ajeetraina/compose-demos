@@ -3,7 +3,24 @@
 
 To create the secret files for your Docker Compose services, you can use the following steps:
 
-## Create Secret Files:
+## Create Secret for DB Root Password:
+
+```
+ printf "This is my db root secret" | docker secret create db_root_password_secret -
+```
+
+## Create Secrets for DB Password
+
+
+```
+ printf "This is my db secret" | docker secret create db_password_secret -
+```
+
+
+
+
+
+
 
 Start by creating text files that contain the secrets you want to use. You can use a text editor or command-line tools to create these files.
 
